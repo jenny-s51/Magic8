@@ -7,22 +7,18 @@
 	.st1{fill:#38386D;}
 	.st2{fill:#6100F9;stroke:#4D04B5;stroke-miterlimit:10;}
 	.st3{fill:none;stroke:#000000;stroke-miterlimit:10;}
-	.st4{fill:#F2F2F2;}
-	.st5{font-family:'BodoniSvtyTwoSCITCTT-Book';}
-	.st6{font-size:69.5043px;}
 </style>
-<circle class="st0" cx="1015.5" cy="542.08" r="471.5"/>
+<circle class="st0" cx="1015.5" cy="542.1" r="471.5"/>
 <g>
-	<circle class="st1" cx="1008.08" cy="541.19" r="239.57"/>
+	<circle class="st1" cx="1008.1" cy="541.2" r="239.6"/>
 </g>
 <g>
-	<circle cx="1008.07" cy="541" r="216.32"/>
+	<circle cx="1008.1" cy="541" r="216.3"/>
 </g>
-<polygon class="st2" points="1007.74,458.96 1134.82,458.96 1071.28,569.02 1007.74,679.08 944.19,569.02 880.65,458.96 "/>
+<polygon class="st2" points="1007.7,459 1134.8,459 1071.3,569 1007.7,679.1 944.2,569 880.7,459 "/>
 <g>
 	<g>
-		<path class="st3" d="M568.63,65.47"/>
+		<path class="st3" d="M568.6,65.5"/>
 	</g>
 </g>
-<text transform="matrix(1 0 0 1 942.8467 550.0498)" class="st4 st5 st6">YES</text>
 </svg>
