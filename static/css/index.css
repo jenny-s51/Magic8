@@ -1,7 +1,20 @@
 img {
-    width: 50em;
+  width: 50em;
 }
 
 .eight_ball {
+  text-align: center;
+}
+
+.shake-button {
     text-align: center;
+      padding-top: 15px;
+
+}
+
+.waves-effect.waves-light.btn {
+  background-color: #26a69a !important;
+  color: #fff !important;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
 }

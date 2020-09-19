@@ -1,41 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-      <link rel="stylesheet" href="static/css/index.css">
-        <title>Magic 8</title>
-    </head>
-    <body>
-        {% extends "base.html" %}
-        {% block title %}Home Page{% endblock %}
-        {% block content %}
+  <head>
+    <link rel="stylesheet" href="static/css/index.css" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/materialize.min.css') }}"
+      media="screen,projection"
+    />
+    <title>Magic 8</title>
+  </head>
+  <body>
+    {% extends "base.html" %} {% block title %}Home Page{% endblock %} {% block
+    content %}
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">8 Ball selections:</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="/">Regular <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="swanson.html">Swanson</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="yesno.html">Yes/No</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="shakespeare.html">Shakespeare</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        <h1>Welcome to Magic 8!</h1>
-        <h2>Find the answers to life, the universe, and everything!</h2>
-        <div class="eight_ball">
-          <img src="static/images/magic8_says_yes.svg"/>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">8 Ball selections:</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/"
+              >Regular <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="swanson.html">Swanson</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="yesno.html">Yes/No</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shakespeare.html">Shakespeare</a>
+          </li>
+        </ul>
       </div>
-        {% endblock %}
-    </body>
+    </nav>
+    <h1>Welcome to Magic 8!</h1>
+    <h2>Find the answers to life, the universe, and everything!</h2>
+    <div class="eight_ball">
+      <img src="static/images/magic8_says_yes.png" />
+    </div>
+    <div class="shake-button"><a class="waves-effect waves-light btn">SHAKE</a></div>
+    {% endblock %}
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/materialize.js') }}"
+    ></script>
+  </body>
 </html>

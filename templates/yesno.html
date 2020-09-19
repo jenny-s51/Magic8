@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/index.css" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/materialize.min.css') }}"
+      media="screen,projection"
+    />
     <title>Magic 8</title>
   </head>
 
@@ -44,8 +56,16 @@
     <h1>Welcome to Magic 8!</h1>
     <h2>Find the answers to life, the universe, and everything!</h2>
     <div class="eight_ball">
-      <img src="static/images/magic8_says_yes.svg" />
+      <img src="static/images/magic8_says_yes.png" />
+    </div>
+    <div class="shake-button">
+      <a class="waves-effect waves-light btn">SHAKE</a>
     </div>
     {% endblock %}
+
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/materialize.min.js') }}"
+    ></script>
   </body>
 </html>
